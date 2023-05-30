@@ -1,5 +1,7 @@
 body {
-  background-color: rgb(224, 215, 204);
+  background-image: url(../src/image/clock.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 select {
   display: block;
@@ -7,26 +9,39 @@ select {
   border-radius: 4px;
   padding: 10px;
   font-size: 18px;
+  border: 8px solid #ebeaef;
 }
 h1 {
   text-align: center;
-  font-size: 36px;
+  font-size: 42px;
+  font-family: "Lobster", cursive;
+  color: rgb(90, 73, 73);
 }
 h2 {
   margin: 0;
   font-size: 24px;
+  font-family: "Dosis", sans-serif;
+  color: rgb(74, 61, 61);
 }
 footer {
   text-align: center;
   font-size: 15px;
+  margin: 15px;
+  color: white;
+}
+footer a {
+  color: white;
+}
+footer a:hover {
+  color: rgb(248, 25, 70);
 }
 
 .container {
   max-width: 600px;
   margin: 0 auto;
-  background-color: white;
+  background-color: rgb(240, 233, 233);
   padding: 30px;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgb(74, 61, 61);
   border-radius: 10px;
 }
 .city {
@@ -40,14 +55,30 @@ footer {
   border: none;
 }
 .date {
-  opacity: 0.5;
+  opacity: 0.6;
 }
 .time {
   font-size: 36px;
   font-weight: bold;
+  color: rgb(72, 63, 63);
 }
 .time small {
   font-size: 18px;
   line-height: 36px;
   vertical-align: middle;
+  color: rgb(72, 63, 63);
+}
+
+@media (max-width: 800px) {
+  body {
+    background-repeat: repeat;
+    background-size: contain;
+  }
+  .time {
+    font-size: 28px;
+  }
+  .time small {
+    font-size: 15px;
+    line-height: 36px;
+  }
 }
